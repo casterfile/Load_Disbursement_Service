@@ -1,0 +1,77 @@
+===============================================================================
+                    LOAD DISBURSEMENT SERVICE - UNIT TEST RESULTS
+===============================================================================
+Test Date: 2026-02-05
+Test Framework: JUnit 5 + Mockito
+Build Tool: Maven 3.9.6
+Java Version: 21
+
+===============================================================================
+                              TEST EXECUTION LOG
+===============================================================================
+
+[INFO] Running com.example.disbursement.DisbursementApplicationTests
+2026-02-05T14:02:45.943Z  INFO --- Starting DisbursementApplicationTests
+2026-02-05T14:02:47.605Z  INFO --- Started DisbursementApplicationTests in 1.684 seconds
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] Running com.example.disbursement.service.ProviderServiceTest
+- createProvider_shouldCreateAndReturnProvider                    PASS
+- getAllProviders_shouldReturnAllProviders                        PASS
+- getAllProviders_shouldReturnEmptyListWhenNoProviders            PASS
+- getProviderById_shouldReturnProvider                            PASS
+- getProviderById_shouldThrowWhenNotFound                         PASS
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] Running com.example.disbursement.service.OrderServiceTest
+- createLoadOrder_shouldCreateOrder                               PASS
+- disburseOrder_shouldUpdateOrderToSuccess                        PASS
+- disburseOrder_shouldUpdateOrderToFailed                         PASS
+- disburseOrder_shouldThrowWhenOrderAlreadyDisbursed              PASS
+- getOrderById_shouldReturnOrder                                  PASS
+- getOrderById_shouldThrowWhenNotFound                            PASS
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] Running com.example.disbursement.controller.ProviderControllerTest
+- createProvider_shouldReturn201                                  PASS
+- getAllProviders_shouldReturnProvidersList                       PASS
+- getAllProviders_shouldReturnEmptyList                           PASS
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] Running com.example.disbursement.controller.OrderControllerTest
+- createLoadOrder_shouldReturn201                                 PASS
+- disburseOrder_shouldReturn200                                   PASS
+- getOrder_shouldReturn200                                        PASS
+- getOrder_shouldReturn404WhenNotFound                            PASS
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+===============================================================================
+                              TEST SUMMARY
+===============================================================================
+
++----------------------------------+-------+--------+--------+---------+
+| Test Class                       | Tests | Passed | Failed | Skipped |
++----------------------------------+-------+--------+--------+---------+
+| DisbursementApplicationTests     |   1   |   1    |   0    |    0    |
+| ProviderServiceTest              |   5   |   5    |   0    |    0    |
+| OrderServiceTest                 |   6   |   6    |   0    |    0    |
+| ProviderControllerTest           |   3   |   3    |   0    |    0    |
+| OrderControllerTest              |   4   |   4    |   0    |    0    |
++----------------------------------+-------+--------+--------+---------+
+| TOTAL                            |  19   |  19    |   0    |    0    |
++----------------------------------+-------+--------+--------+---------+
+
+===============================================================================
+                              BUILD RESULT
+===============================================================================
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:31 min
+[INFO] Finished at: 2026-02-05T14:02:47Z
+[INFO] ------------------------------------------------------------------------
+
+===============================================================================
+                         ALL 19 TESTS PASSED!
+===============================================================================

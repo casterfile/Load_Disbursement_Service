@@ -1,0 +1,17 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "POST",
+    "urlPath": "/validate-fail"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "valid": false,
+      "error": "Invalid amount. Amount must be between 1 and 1000"
+    }
+  }
+}

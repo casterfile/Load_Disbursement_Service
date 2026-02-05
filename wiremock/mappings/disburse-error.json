@@ -1,0 +1,17 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "POST",
+    "urlPath": "/disburse-fail"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "success": false,
+      "error": "Disbursement failed. Please try again later."
+    }
+  }
+}
